@@ -1,4 +1,4 @@
-/* ***------------------Navbar style-------------------*** */
+/* ***----------------------Navbar style----------------------------*** */
 
 #nav-container {
     width: 1440px;
@@ -16,7 +16,7 @@
     color: #131313;
     text-align: center;
     font-family: "Work Sans";
-    font-size: 28px;
+    font-size: 45px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -28,7 +28,7 @@
     color: rgba(19, 19, 19, 0.8);
     text-align: center;
     font-family: "Work Sans";
-    font-size: 18px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -139,3 +139,63 @@
 
 
 /* ***-----------Button Style End-------------*** */
+
+
+/* ***------------------Navbar Style End---------------------*** */
+
+#banner {
+    width: 1170px;
+    margin: 0 auto;
+    padding-top: 52px;
+}
+
+.banner-container {
+    display: flex;
+    height: 554px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: rgba(19, 19, 19, 0.05);
+}
+
+.banner-text-container h1 {
+    width: 526px;
+    color: #131313;
+    font-family: "Playfair Display";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 84px;
+}
+
+
+/* .banner-btn-div {
+    display: inline-flex;
+    padding: 21px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #23BE0A;
+} */
+
+.banner-btn {
+    color: #FFF;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    /* ***------***------*** */
+    display: inline;
+    padding: 21px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #23BE0A;
+    border-style: none;
+    cursor: pointer;
+}
