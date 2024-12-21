@@ -1,5 +1,10 @@
 /* ***----------------------Navbar style----------------------------*** */
 
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 #nav-container {
     width: 1440px;
     margin: 0 auto;
@@ -112,6 +117,7 @@
     cursor: pointer;
     transition: all 0.3s ease;
     animation-duration: 3s;
+    box-shadow: 0px 3px 5px 0px rgba(47, 47, 47, 0.771);
 }
 
 .btn-2 {
@@ -135,6 +141,21 @@
     background: #59C6D2;
     border-style: none;
     cursor: pointer;
+    box-shadow: 0px 3px 5px 0px rgba(47, 47, 47, 0.771);
+}
+
+.btn-1:hover {
+    background-color: #0e0e0e;
+    color: #3bf1f1;
+    transition: all 0.3s ease;
+    animation-duration: 3s;
+}
+
+.btn-2:hover {
+    background-color: #0e0e0e;
+    color: #eaf42e;
+    transition: all 0.3s ease;
+    animation-duration: 3s;
 }
 
 
@@ -198,4 +219,124 @@
     background: #23BE0A;
     border-style: none;
     cursor: pointer;
+}
+
+
+/* ****-------------------------Card Section Start---------------------------------**** */
+
+#card-section {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.card-title {
+    text-align: center;
+    color: #131313;
+    font-family: "Playfair Display";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card-container {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    border-radius: 16px;
+    border: 1px solid rgba(19, 19, 19, 0.15);
+    height: 480px;
+    box-shadow: 2px 3px 8px rgb(142, 141, 141);
+}
+
+.card-img {
+    height: 230px;
+    align-self: stretch;
+    border-radius: 16px;
+    background: #F3F3F3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img-inside {
+    width: 134px;
+    height: 166px;
+}
+
+.btn-parent {
+    display: flex;
+    gap: 20px;
+}
+
+.card-btn {
+    color: #053095;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-btn:hover {
+    background-color: #0e0e0e;
+    color: #1de1e1;
+    transition: all 0.3s ease;
+    animation-duration: 3s;
+}
+
+.card-sub-title {
+    color: #131313;
+    font-family: "Playfair Display";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: start;
+}
+
+.card-p {
+    color: rgba(19, 19, 19, 0.80);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.card-line {
+    width: 326px;
+    height: 1px;
+    background: rgba(19, 19, 19, 0.15);
+}
+
+.card-fiction-rating {
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.card-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.card-parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Three equal columns */
+    gap: 20px;
+    /* Space between the cards */
+    align-items: center;
+    justify-content: center;
 }
