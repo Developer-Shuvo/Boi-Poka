@@ -163,3 +163,152 @@
 
 
 /* ***------------------Navbar Style End---------------------*** */
+
+
+/* ***-----------------Card details page style------------------------*** */
+
+#page-id {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.page-main-container {
+    margin-top: 60px;
+    display: flex;
+    gap: 48px;
+    margin-bottom: 164px;
+}
+
+.img-container {
+    width: 573px;
+    height: 711px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: rgba(19, 19, 19, 0.05);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.img-inside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 425px;
+    height: 564px;
+    padding: 75px;
+}
+
+.txt-container {}
+
+.txt-container-header h1 {
+    color: #131313;
+    font-family: "Playfair Display";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.txt-container-header p {
+    color: rgba(19, 19, 19, 0.80);
+    font-family: "Work Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.line {
+    background: rgba(19, 19, 19, 0.15);
+    width: 549px;
+    height: 1px;
+}
+
+.line2 {
+    background: rgba(19, 19, 19, 0.15);
+    width: 549px;
+    height: 2px;
+}
+
+.line3 {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    background: rgba(19, 19, 19, 0.15);
+    width: 549px;
+    height: 2px;
+}
+
+.fiction {
+    color: rgba(19, 19, 19, 0.80);
+    font-family: "Work Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.rvw-head {
+    color: #131313;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.review {
+    color: rgba(19, 19, 19, 0.70);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.tag {
+    display: flex;
+    gap: 40px;
+}
+
+.tag-1 {
+    color: #131313;
+    font-family: "Work Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.hash-tag {
+    color: #23BE0A;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.about-us-details {
+    display: flex;
+    gap: 60px;
+    padding-bottom: 32px;
+}
+
+.about-us-text {
+    color: rgba(19, 19, 19, 0.70);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.about-us-result {
+    color: #131313;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
