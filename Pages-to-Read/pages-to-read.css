@@ -187,3 +187,75 @@ a {
 
 
 /* ***------------------Navbar Style End---------------------*** */
+
+
+/* **---------------------------Page Title--------------------------------** */
+
+.page-title {
+    margin-top: 36px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 1170px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: rgba(19, 19, 19, 0.05);
+}
+
+.page-title h2 {
+    color: #131313;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+/* ***---------------------------Title Under button----------------------------*** */
+
+.title-under-btn {
+    margin-top: 32px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-btn {
+    /* ***------[btn] in side style------*** */
+    color: #FFF;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    /* ***-----[btn] Out side------*** */
+    border-style: none;
+    border-radius: 8px;
+    gap: 16px;
+    display: flex;
+    gap: 16px;
+    display: inline-flex;
+    padding: 18px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #0a16be;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation-duration: 3s;
+    box-shadow: 0px 3px 5px 0px rgba(47, 47, 47, 0.771);
+}
+
+.title-btn:hover {
+    background-color: #0e0e0e;
+    color: #3bf1f1;
+    transition: all 0.3s ease;
+    animation-duration: 3s;
+}
