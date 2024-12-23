@@ -40,9 +40,25 @@
 }
 
 
+/* clickable page */
+
+.li-2 {
+    color: rgba(19, 19, 19, 0.8);
+    text-decoration: none;
+}
+
+
 /* ***-------List item animation & Hover-------*** */
 
+
+/* Clickable button & change page  */
+
 .li-1 {
+    text-decoration: none;
+    color: rgba(19, 19, 19, 0.8);
+}
+
+.li-2 {
     text-decoration: none;
     color: rgba(19, 19, 19, 0.8);
 }

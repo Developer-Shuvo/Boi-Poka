@@ -39,13 +39,21 @@
     line-height: normal;
 }
 
-
-/* ***-------List item animation & Hover-------*** */
-
 .li-1 {
     text-decoration: none;
     color: rgba(19, 19, 19, 0.8);
 }
+
+
+/* Clickable button & change page  */
+
+.li-2 {
+    text-decoration: none;
+    color: rgba(19, 19, 19, 0.8);
+}
+
+
+/* ***-------List item animation & Hover-------*** */
 
 .li-1:hover {
     color: #231f01;
