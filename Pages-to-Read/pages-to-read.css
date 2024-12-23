@@ -1,261 +1,523 @@
-/* ***----------------------Navbar style----------------------------*** */
-
-a {
-    text-decoration: none !important;
-}
-
-
-/* Hover effect for the card */
-
-.card-container:hover {
-    transform: scale(1);
-    border: 2px solid #757575;
-}
-
-
-/* Ensure smooth transitions for buttons and images inside */
-
-.card-container .card-img-inside,
-.card-container .card-btn {
-    transition: transform 0.5s ease;
-}
-
-.card-container:hover .card-img-inside {
-    transform: scale(1.1);
-}
-
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
-#nav-container {
-    width: 1440px;
-    margin: 0 auto;
-}
-
-.nav-content-container {
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav-content-container h2 {
-    color: #131313;
-    text-align: center;
-    font-family: "Work Sans";
-    font-size: 45px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.nav-li {
-    padding-left: 174px;
-    padding-right: 190px;
-    color: rgba(19, 19, 19, 0.8);
-    text-align: center;
-    font-family: "Work Sans";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-
-/* ***-------List item animation & Hover-------*** */
-
-.li-1:hover {
-    color: #231f01;
-    cursor: pointer;
-    font-size: 25px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    transition: all 0.3s ease;
-    animation-duration: 3s;
-    padding: 8px;
-    border-radius: 8px;
-    background-color: #23BE0A;
-}
-
-.li-2:hover {
-    color: #100f0f;
-    cursor: pointer;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    transition: all 0.3s ease;
-    animation-duration: 3s;
-    padding: 8px;
-    border-radius: 8px;
-    background-color: #1de1e1;
-}
-
-.li-3:hover {
-    color: #2ccbce;
-    cursor: pointer;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    transition: all 0.3s ease;
-    animation-duration: 3s;
-    padding: 8px;
-    border-radius: 5px;
-    background-color: #0e0e0e;
-}
-
-.nav-li ul {
-    gap: 16px;
-    display: flex;
-    list-style: none;
-}
-
-
-/* ***-----------Button Style start-------------*** */
-
-.nav-btn {
-    display: flex;
-    gap: 16px;
-}
-
-.btn-1 {
-    /* ***------[btn] in side style------*** */
-    color: #FFF;
-    text-align: center;
-    font-family: "Work Sans";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    /* ***-----[btn] Out side------*** */
-    border-style: none;
-    border-radius: 8px;
-    gap: 16px;
-    display: flex;
-    gap: 16px;
-    display: inline-flex;
-    padding: 18px 28px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 8px;
-    background: #23BE0A;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    animation-duration: 3s;
-    box-shadow: 0px 3px 5px 0px rgba(47, 47, 47, 0.771);
-}
-
-.btn-2 {
-    /* ***------in side style-------*** */
-    color: #7505e5;
-    text-align: center;
-    font-family: "Work Sans";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    /* ***------Out side-------*** */
-    border-style: none;
-    border-radius: 8px;
-    display: inline-flex;
-    padding: 18px 28px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 8px;
-    background: #59C6D2;
-    border-style: none;
-    cursor: pointer;
-    box-shadow: 0px 3px 5px 0px rgba(47, 47, 47, 0.771);
-}
-
-.btn-1:hover {
-    background-color: #0e0e0e;
-    color: #3bf1f1;
-    transition: all 0.3s ease;
-    animation-duration: 3s;
-}
-
-.btn-2:hover {
-    background-color: #0e0e0e;
-    color: #eaf42e;
-    transition: all 0.3s ease;
-    animation-duration: 3s;
-}
-
-
-/* ***-----------Button Style End-------------*** */
-
-
-/* ***------------------Navbar Style End---------------------*** */
-
-
-/* **---------------------------Page Title--------------------------------** */
-
-.page-title {
-    margin-top: 36px;
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    width: 1170px;
-    height: 100px;
-    flex-shrink: 0;
-    border-radius: 16px;
-    background: rgba(19, 19, 19, 0.05);
-}
-
-.page-title h2 {
-    color: #131313;
-    text-align: center;
-    font-family: "Work Sans";
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-
-/* ***---------------------------Title Under button----------------------------*** */
-
-.title-under-btn {
-    margin-top: 32px;
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    justify-content: center;
-}
-
-.title-btn {
-    /* ***------[btn] in side style------*** */
-    color: #FFF;
-    text-align: center;
-    font-family: "Work Sans";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    /* ***-----[btn] Out side------*** */
-    border-style: none;
-    border-radius: 8px;
-    gap: 16px;
-    display: flex;
-    gap: 16px;
-    display: inline-flex;
-    padding: 18px 28px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 8px;
-    background: #0a16be;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    animation-duration: 3s;
-    box-shadow: 0px 3px 5px 0px rgba(47, 47, 47, 0.771);
-}
-
-.title-btn:hover {
-    background-color: #0e0e0e;
-    color: #3bf1f1;
-    transition: all 0.3s ease;
-    animation-duration: 3s;
-}
+    /* ***----------------------Navbar style----------------------------*** */
+    
+    body {
+        max-width: 1440px !important;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    a {
+        text-decoration: none !important;
+    }
+    /* Hover effect for the card */
+    
+    .card-container:hover {
+        transform: scale(1);
+        border: 2px solid #757575;
+    }
+    /* Ensure smooth transitions for buttons and images inside */
+    
+    .card-container .card-img-inside,
+    .card-container .card-btn {
+        transition: transform 0.5s ease;
+    }
+    
+    .card-container:hover .card-img-inside {
+        transform: scale(1.1);
+    }
+    
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    
+    #nav-container {
+        width: 1440px;
+        margin: 0 auto;
+    }
+    
+    .nav-content-container {
+        /* margin-top: 50px; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .nav-content-container h2 {
+        color: #131313;
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    .nav-li {
+        padding-left: 174px;
+        padding-right: 190px;
+        color: rgba(19, 19, 19, 0.8);
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    /* ***-------List item animation & Hover-------*** */
+    
+    .li-1:hover {
+        color: #231f01;
+        cursor: pointer;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        transition: all 0.3s ease;
+        animation-duration: 3s;
+        padding: 8px;
+        border-radius: 8px;
+        background-color: #23BE0A;
+    }
+    
+    .li-2:hover {
+        color: #100f0f;
+        cursor: pointer;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        transition: all 0.3s ease;
+        animation-duration: 3s;
+        padding: 8px;
+        border-radius: 8px;
+        background-color: #1de1e1;
+    }
+    
+    .li-3:hover {
+        color: #2ccbce;
+        cursor: pointer;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        transition: all 0.3s ease;
+        animation-duration: 3s;
+        padding: 8px;
+        border-radius: 5px;
+        background-color: #0e0e0e;
+    }
+    
+    .nav-li ul {
+        gap: 16px;
+        display: flex;
+        list-style: none;
+    }
+    /* ***-----------Button Style start-------------*** */
+    
+    .nav-btn {
+        display: flex;
+        gap: 16px;
+    }
+    
+    .btn-1 {
+        /* ***------[btn] in side style------*** */
+        color: #FFF;
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        /* ***-----[btn] Out side------*** */
+        border-style: none;
+        border-radius: 8px;
+        gap: 16px;
+        display: flex;
+        gap: 16px;
+        display: inline-flex;
+        padding: 18px 28px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 8px;
+        background: #23BE0A;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        animation-duration: 3s;
+        box-shadow: 0px 3px 5px 0px rgba(47, 47, 47, 0.771);
+    }
+    
+    .btn-2 {
+        /* ***------in side style-------*** */
+        color: #7505e5;
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        /* ***------Out side-------*** */
+        border-style: none;
+        border-radius: 8px;
+        display: inline-flex;
+        padding: 18px 28px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 8px;
+        background: #59C6D2;
+        border-style: none;
+        cursor: pointer;
+        box-shadow: 0px 3px 5px 0px rgba(47, 47, 47, 0.771);
+    }
+    
+    .btn-1:hover {
+        background-color: #0e0e0e;
+        color: #3bf1f1;
+        transition: all 0.3s ease;
+        animation-duration: 3s;
+    }
+    
+    .btn-2:hover {
+        background-color: #0e0e0e;
+        color: #eaf42e;
+        transition: all 0.3s ease;
+        animation-duration: 3s;
+    }
+    /* ***-----------Button Style End-------------*** */
+    /* ***------------------Navbar Style End---------------------*** */
+    /* **---------------------------Page Title--------------------------------** */
+    
+    .page-title {
+        margin-top: 36px;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        flex-shrink: 0;
+        border-radius: 16px;
+        background: rgba(19, 19, 19, 0.05);
+    }
+    
+    .page-title h2 {
+        color: #131313;
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    /* ***---------------------------Title Under button----------------------------*** */
+    
+    .title-under-btn {
+        margin-top: 32px;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .title-btn {
+        /* ***------[btn] in side style------*** */
+        color: #FFF;
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        /* ***-----[btn] Out side------*** */
+        border-style: none;
+        border-radius: 8px;
+        gap: 16px;
+        display: flex;
+        gap: 16px;
+        display: inline-flex;
+        padding: 18px 28px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 8px;
+        background: #0a16be;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        animation-duration: 3s;
+        box-shadow: 0px 3px 5px 0px rgba(47, 47, 47, 0.771);
+    }
+    
+    .title-btn:hover {
+        background-color: #0e0e0e;
+        color: #3bf1f1;
+        transition: all 0.3s ease;
+        animation-duration: 3s;
+    }
+    
+    .readBooks-wishlist {
+        margin-top: 56px;
+    }
+    
+    .wishlist {
+        display: flex;
+        max-width: 100%;
+        margin: 0 auto;
+        gap: 20px;
+    }
+    
+    .p1 {
+        color: rgba(19, 19, 19, 0.80);
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    .p2 {
+        color: rgba(19, 19, 19, 0.50);
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    .line1 {
+        background: rgba(19, 19, 19, 0.15);
+        width: 100%;
+        height: 2px;
+    }
+    /* *** ---------------------- Card Section Start --------------------------------*** */
+    
+    #card-section {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 32px;
+    }
+    
+    .card-table {
+        width: 100%;
+    }
+    
+    .card-container {
+        display: inline-flex;
+        width: 1390px;
+        padding: 24px;
+        align-items: flex-start;
+        gap: 24px;
+        border-radius: 16px;
+        border: 1px solid rgba(19, 19, 19, 0.15);
+        background-color: #d3dee158;
+    }
+    
+    .img-container {
+        width: 230px;
+        align-self: stretch;
+        border-radius: 16px;
+        background: rgba(19, 19, 19, 0.05);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .img-inside {
+        width: 129.32px;
+        height: 172px;
+        flex-shrink: 0;
+        align-items: center;
+    }
+    
+    .txt-container h2 {
+        color: #131313;
+        font-family: "Playfair Display";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    .txt-container p {
+        color: rgba(19, 19, 19, 0.80);
+        font-family: "Work Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    
+    .tags {
+        display: flex;
+        gap: 16px;
+    }
+    
+    .tags .tag-1 {
+        color: #131313;
+        font-family: "Work Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px;
+    }
+    
+    .tags .tag-2 {
+        /* **---text inside---** */
+        color: #23BE0A;
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        /* **---Text Outside----** */
+        display: flex;
+        padding: 7px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 30px;
+        background: rgba(35, 190, 10, 0.05);
+        cursor: pointer;
+    }
+    
+    .tags .tag-3 {
+        /* **---text inside---** */
+        color: #23BE0A;
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        /* **---Text Outside----** */
+        display: flex;
+        padding: 7px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 30px;
+        background: rgba(35, 190, 10, 0.05);
+        cursor: pointer;
+    }
+    
+    .tags .publishing-svg {
+        display: flex;
+        align-items: center;
+        color: rgba(19, 19, 19, 0.80);
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        cursor: pointer;
+    }
+    
+    .publisher-scribner {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        gap: 16px;
+    }
+    
+    .publisher-scribner .publisher-p-1 {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: rgba(19, 19, 19, 0.60);
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    .publisher-scribner .publisher-p-2 {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: rgba(19, 19, 19, 0.60);
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    /* *-------------line--------------* */
+    
+    .line2 {
+        display: flex;
+        background: rgba(19, 19, 19, 0.15);
+        width: 800px;
+        height: 1px;
+        margin-bottom: 16px;
+    }
+    
+    .buttons {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    .buttons .bttn-1 {
+        /* **---text inside---** */
+        color: #1026cf;
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        /* **---text outside---** */
+        display: flex;
+        padding: 11px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 30px;
+        background: rgba(50, 142, 255, 0.15);
+        border-style: none;
+        cursor: pointer;
+    }
+    
+    .buttons .bttn-2 {
+        /* **---text inside---** */
+        color: #ff5833;
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        /* **---text outside---** */
+        display: flex;
+        padding: 11px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 30px;
+        background: rgba(255, 172, 51, 0.15);
+        border-style: none;
+        cursor: pointer;
+    }
+    
+    .buttons .bttn-3 {
+        /* **---text inside---** */
+        color: #FFF;
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        /* **---text outside---** */
+        display: flex;
+        padding: 10px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 30px;
+        background: #23BE0A;
+        border-style: none;
+        cursor: pointer;
+    }
