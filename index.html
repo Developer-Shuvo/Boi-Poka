@@ -5,11 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Boi-Poka</title>
-    <link rel="stylesheet" href="./boiPoka.css" />
-    <link rel="icon" href="./images/book-icn.png" type="image/x-icon">
-    <!-- Fav icon on Top -->
-    <link rel="icon" type="image/png" href="./icon/airplane.png">
 
+    <!-- External Css File connected -->
+    <link rel="stylesheet" href="./boiPoka.css" />
+
+    <!-- Fav icon on Top -->
+    <link rel="icon" href="./images/book-icn.png" type="image/x-icon">
 
     <!-- External Css File connected -->
     <link rel="stylesheet" href="./travel.css">
@@ -34,92 +35,106 @@
 </head>
 
 <body>
-    <!-- ***---------------------Navbar Part Start------------------------*** -->
-    <header>
-        <nav id="nav-container">
-            <div class="nav-content-container">
-                <div>
-                    <h2>Book Vibe</h2>
+    <!-- Navbar -->
+    <header class="bg-white shadow-md">
+        <nav class="container px-4 mx-auto md:px-6 lg:px-8">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <h2 class="text-xl font-bold text-gray-800">Book Vibe</h2>
+
+                <!-- Navigation Links -->
+                <div class="hidden space-x-6 md:flex">
+                    <a href="#" class="text-gray-600 hover:text-gray-900">Home</a>
+                    <a href="./Pages-to-Read/pages-to-read.html" class="text-gray-600 hover:text-gray-900">Listed Books</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900">Pages to Read</a>
                 </div>
-                <!-- ***------List item--------*** -->
-                <div class="nav-li">
-                    <ul>
-                        <li class="li-1">Home</li>
-                        <a class="li-2" href="./Pages-to-Read/pages-to-read.html">Listed Books</a>
-                        <li class="li-3">Pages to Read</li>
-                    </ul>
+
+                <!-- Buttons -->
+                <div class="hidden space-x-4 md:flex">
+                    <button class="px-4 py-2 text-gray-700 bg-gray-200 rounded-md cursor-pointer hover:bg-gray-300">Sign In</button>
+                    <button class="px-4 py-2 text-white bg-blue-600 rounded-md cursor-pointer hover:bg-blue-700">Sign Up</button>
                 </div>
-                <!-- ***--------Button Part----------*** -->
-                <div class="nav-btn">
-                    <button class="btn-1">Sign In</button>
-                    <button class="btn-2">Sign Up</button>
+
+                <!-- Mobile Menu (Hamburger Icon) -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-600 focus:outline-none">
+                        ☰
+                    </button>
                 </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="menu" class="flex flex-col hidden pb-4 space-y-4 md:hidden">
+                <a href="#" class="block text-gray-600 hover:text-gray-900">Home</a>
+                <a href="./Pages-to-Read/pages-to-read.html" class="block text-gray-600 hover:text-gray-900">Listed Books</a>
+                <a href="#" class="block text-gray-600 hover:text-gray-900">Pages to Read</a>
+                <button class="px-4 py-2 text-gray-700 bg-gray-200 rounded-md hover:bg-gray-300">Sign In</button>
+                <button class="px-4 py-2 text-white bg-blue-600 rounded-md hover:bg-blue-700">Sign Up</button>
             </div>
         </nav>
-    </header>
 
-    <!-- ***-----------------------------Banner Part-------------------------------*** -->
-    <section id="banner">
-        <div class="banner-container">
-            <div class="banner-text-container">
+        <!-- ***-----------------------------Banner Part-------------------------------*** -->
+        <section id="banner">
+            <div class="banner-container">
+                <div class="banner-text-container">
+                    <div>
+                        <h1>Books to freshen up your bookshelf</h1>
+                    </div>
+                    <div class="banner-btn-div">
+                        <button class="banner-btn">View The List</button>
+                    </div>
+                </div>
                 <div>
-                    <h1>Books to freshen up your bookshelf</h1>
-                </div>
-                <div class="banner-btn-div">
-                    <button class="banner-btn">View The List</button>
+                    <img src="./images/banner-book.png" alt="">
                 </div>
             </div>
-            <div>
-                <img src="./images/banner-book.png" alt="">
-            </div>
+
+
+        </section>
+        <!-- ***-----------------------------Banner Part End-------------------------------*** -->
+
+        <div class="card-title">
+            <h1>Books</h1>
         </div>
 
+        <!-- ****-------------------Card section-------------------*** -->
+        <section>
+            <!-- ***-----card title-------** -->
 
-    </section>
-    <!-- ***-----------------------------Banner Part End-------------------------------*** -->
+            <div id="card-section">
+                <div class="card-parent">
 
-    <div class="card-title">
-        <h1>Books</h1>
-    </div>
-
-    <!-- ****-------------------Card section-------------------*** -->
-    <section>
-        <!-- ***-----card title-------** -->
-
-        <div id="card-section">
-            <div class="card-parent">
-
-                <!-- FIRST CARD -->
-                <a class="card-container" href="/Card-details-page/card-details-page.html">
-                    <div class="card-img">
-                        <img class="card-img-inside" src="./images/banner-book.png" alt="">
-                    </div>
-
-                    <div class="btn-parent">
-                        <button class="card-btn">Young Adult</button>
-                        <button class="card-btn">Identity</button>
-                    </div>
-
-                    <div>
-                        <h2 class="card-sub-title">The dating playbook for Men</h2>
-                        <p class="card-p">By: Mr. Shuvo</p>
-                    </div>
-                    <!-- ***---------card line---------------*** -->
-                    <div class="card-line"></div>
-
-
-                    <div class="card-fiction-rating">
-
-                        <div>
-                            <h3>Fiction</h3>
+                    <!-- FIRST CARD -->
+                    <a class="card-container" href="/Card-details-page/card-details-page.html">
+                        <div class="card-img">
+                            <img class="card-img-inside" src="./images/banner-book.png" alt="">
                         </div>
 
-                        <div class="card-rating">
-                            <p>5:00</p>
+                        <div class="btn-parent">
+                            <button class="card-btn">Young Adult</button>
+                            <button class="card-btn">Identity</button>
+                        </div>
+
+                        <div>
+                            <h2 class="card-sub-title">The dating playbook for Men</h2>
+                            <p class="card-p">By: Mr. Shuvo</p>
+                        </div>
+                        <!-- ***---------card line---------------*** -->
+                        <div class="card-line"></div>
+
+
+                        <div class="card-fiction-rating">
+
+                            <div>
+                                <h3>Fiction</h3>
+                            </div>
+
+                            <div class="card-rating">
+                                <p>5:00</p>
 
 
 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               
               
                                     <path d="M11.48 3.49897C11.5223 3.3958 11.5943 3.30755 11.6869 3.24543C11.7795 3.18331 11.8885 3.15015 12 3.15015C12.1115 3.15015 12.2205 3.18331 12.3131 3.24543C12.4057 3.30755 12.4777 3.3958 12.52 3.49897L14.645 8.60997C14.6848 8.70561 14.7502 8.78841 14.834 8.84928C14.9178 8.91015 15.0167 8.94672 15.12 8.95497L20.638 9.39697C21.137 9.43697 21.339 10.06 20.959 10.385L16.755 13.987C16.6765 14.0542 16.6179 14.1417 16.5858 14.2399C16.5537 14.3382 16.5493 14.4434 16.573 14.544L17.858 19.929C17.8838 20.037 17.8771 20.1503 17.8385 20.2545C17.8 20.3587 17.7315 20.4491 17.6416 20.5144C17.5517 20.5797 17.4445 20.6168 17.3335 20.6212C17.2225 20.6256 17.1127 20.597 17.018 20.539L12.293 17.654C12.2048 17.6001 12.1034 17.5715 12 17.5715C11.8966 17.5715 11.7952 17.6001 11.707 17.654L6.982 20.54C6.88725 20.598 6.77745 20.6266 6.66645 20.6222C6.55546 20.6178 6.44825 20.5807 6.35836 20.5154C6.26848 20.4501 6.19996 20.3597 6.16145 20.2555C6.12294 20.1513 6.11617 20.038 6.142 19.93L7.427 14.544C7.45083 14.4434 7.44645 14.3381 7.41434 14.2399C7.38223 14.1416 7.32363 14.0541 7.245 13.987L3.041 10.385C2.95634 10.3128 2.895 10.2171 2.86476 10.1101C2.83451 10.003 2.83671 9.88942 2.87109 9.78362C2.90546 9.67782 2.97046 9.58461 3.05785 9.51578C3.14524 9.44695 3.25109 9.4056 3.362 9.39697L8.88 8.95497C8.98325 8.94672 9.08222 8.91015 9.16602 8.84928C9.24983 8.78841 9.31522 8.70561 9.355 8.60997L11.48 3.49897Z" stroke="#424242" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -127,43 +142,43 @@
                                 </svg>
 
 
+                            </div>
                         </div>
-                    </div>
 
-                </a>
+                    </a>
 
-                <!-- SEC CARD -->
+                    <!-- SEC CARD -->
 
-                <a class="card-container" href="./Card-details-page/2-CDP.html">
-                    <div class="card-img">
-                        <img class="card-img-inside" src="./images/card-images/card-2.png" alt="">
-                    </div>
+                    <a class="card-container" href="./Card-details-page/2-CDP.html">
+                        <div class="card-img">
+                            <img class="card-img-inside" src="./images/card-images/card-2.png" alt="">
+                        </div>
 
-                    <div class="btn-parent">
-                        <button class="card-btn">Young Adult</button>
-                        <button class="card-btn">Identity</button>
-                    </div>
-
-                    <div>
-                        <h2 class="card-sub-title">Why do you hate Money?</h2>
-                        <p class="card-p">By: Mr. Shuvo</p>
-                    </div>
-                    <!-- ***---------card line---------------*** -->
-                    <div class="card-line"></div>
-
-
-                    <div class="card-fiction-rating">
+                        <div class="btn-parent">
+                            <button class="card-btn">Young Adult</button>
+                            <button class="card-btn">Identity</button>
+                        </div>
 
                         <div>
-                            <h3>Fiction</h3>
+                            <h2 class="card-sub-title">Why do you hate Money?</h2>
+                            <p class="card-p">By: Mr. Shuvo</p>
                         </div>
-
-                        <div class="card-rating">
-                            <p>5:00</p>
-
+                        <!-- ***---------card line---------------*** -->
+                        <div class="card-line"></div>
 
 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <div class="card-fiction-rating">
+
+                            <div>
+                                <h3>Fiction</h3>
+                            </div>
+
+                            <div class="card-rating">
+                                <p>5:00</p>
+
+
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               
               
                                     <path d="M11.48 3.49897C11.5223 3.3958 11.5943 3.30755 11.6869 3.24543C11.7795 3.18331 11.8885 3.15015 12 3.15015C12.1115 3.15015 12.2205 3.18331 12.3131 3.24543C12.4057 3.30755 12.4777 3.3958 12.52 3.49897L14.645 8.60997C14.6848 8.70561 14.7502 8.78841 14.834 8.84928C14.9178 8.91015 15.0167 8.94672 15.12 8.95497L20.638 9.39697C21.137 9.43697 21.339 10.06 20.959 10.385L16.755 13.987C16.6765 14.0542 16.6179 14.1417 16.5858 14.2399C16.5537 14.3382 16.5493 14.4434 16.573 14.544L17.858 19.929C17.8838 20.037 17.8771 20.1503 17.8385 20.2545C17.8 20.3587 17.7315 20.4491 17.6416 20.5144C17.5517 20.5797 17.4445 20.6168 17.3335 20.6212C17.2225 20.6256 17.1127 20.597 17.018 20.539L12.293 17.654C12.2048 17.6001 12.1034 17.5715 12 17.5715C11.8966 17.5715 11.7952 17.6001 11.707 17.654L6.982 20.54C6.88725 20.598 6.77745 20.6266 6.66645 20.6222C6.55546 20.6178 6.44825 20.5807 6.35836 20.5154C6.26848 20.4501 6.19996 20.3597 6.16145 20.2555C6.12294 20.1513 6.11617 20.038 6.142 19.93L7.427 14.544C7.45083 14.4434 7.44645 14.3381 7.41434 14.2399C7.38223 14.1416 7.32363 14.0541 7.245 13.987L3.041 10.385C2.95634 10.3128 2.895 10.2171 2.86476 10.1101C2.83451 10.003 2.83671 9.88942 2.87109 9.78362C2.90546 9.67782 2.97046 9.58461 3.05785 9.51578C3.14524 9.44695 3.25109 9.4056 3.362 9.39697L8.88 8.95497C8.98325 8.94672 9.08222 8.91015 9.16602 8.84928C9.24983 8.78841 9.31522 8.70561 9.355 8.60997L11.48 3.49897Z" stroke="#424242" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -171,44 +186,44 @@
                                 </svg>
 
 
+                            </div>
                         </div>
-                    </div>
 
-                </a>
+                    </a>
 
-                <!-- third  -->
-
-
-                <a href="./Card-details-page/3-CDP.html" style="border:1px" class="card-container ">
-                    <div href="" class="card-img">
-                        <img class="card-img-inside" src="./images/card-images/card-3.png" alt="">
-                    </div>
-
-                    <div class="btn-parent">
-                        <button class="card-btn">Young Adult</button>
-                        <button class="card-btn">Identity</button>
-                    </div>
-
-                    <div>
-                        <h2 class="card-sub-title">The hate U give </h2>
-                        <p class="card-p">By: Mr. Shuvo</p>
-                    </div>
-                    <!-- ***---------card line---------------*** -->
-                    <div class="card-line"></div>
+                    <!-- third  -->
 
 
-                    <div class="card-fiction-rating">
+                    <a href="./Card-details-page/3-CDP.html" style="border:1px" class="card-container ">
+                        <div href="" class="card-img">
+                            <img class="card-img-inside" src="./images/card-images/card-3.png" alt="">
+                        </div>
+
+                        <div class="btn-parent">
+                            <button class="card-btn">Young Adult</button>
+                            <button class="card-btn">Identity</button>
+                        </div>
 
                         <div>
-                            <h3>Fiction</h3>
+                            <h2 class="card-sub-title">The hate U give </h2>
+                            <p class="card-p">By: Mr. Shuvo</p>
                         </div>
-
-                        <div class="card-rating">
-                            <p>5:00</p>
-
+                        <!-- ***---------card line---------------*** -->
+                        <div class="card-line"></div>
 
 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <div class="card-fiction-rating">
+
+                            <div>
+                                <h3>Fiction</h3>
+                            </div>
+
+                            <div class="card-rating">
+                                <p>5:00</p>
+
+
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               
               
                                     <path d="M11.48 3.49897C11.5223 3.3958 11.5943 3.30755 11.6869 3.24543C11.7795 3.18331 11.8885 3.15015 12 3.15015C12.1115 3.15015 12.2205 3.18331 12.3131 3.24543C12.4057 3.30755 12.4777 3.3958 12.52 3.49897L14.645 8.60997C14.6848 8.70561 14.7502 8.78841 14.834 8.84928C14.9178 8.91015 15.0167 8.94672 15.12 8.95497L20.638 9.39697C21.137 9.43697 21.339 10.06 20.959 10.385L16.755 13.987C16.6765 14.0542 16.6179 14.1417 16.5858 14.2399C16.5537 14.3382 16.5493 14.4434 16.573 14.544L17.858 19.929C17.8838 20.037 17.8771 20.1503 17.8385 20.2545C17.8 20.3587 17.7315 20.4491 17.6416 20.5144C17.5517 20.5797 17.4445 20.6168 17.3335 20.6212C17.2225 20.6256 17.1127 20.597 17.018 20.539L12.293 17.654C12.2048 17.6001 12.1034 17.5715 12 17.5715C11.8966 17.5715 11.7952 17.6001 11.707 17.654L6.982 20.54C6.88725 20.598 6.77745 20.6266 6.66645 20.6222C6.55546 20.6178 6.44825 20.5807 6.35836 20.5154C6.26848 20.4501 6.19996 20.3597 6.16145 20.2555C6.12294 20.1513 6.11617 20.038 6.142 19.93L7.427 14.544C7.45083 14.4434 7.44645 14.3381 7.41434 14.2399C7.38223 14.1416 7.32363 14.0541 7.245 13.987L3.041 10.385C2.95634 10.3128 2.895 10.2171 2.86476 10.1101C2.83451 10.003 2.83671 9.88942 2.87109 9.78362C2.90546 9.67782 2.97046 9.58461 3.05785 9.51578C3.14524 9.44695 3.25109 9.4056 3.362 9.39697L8.88 8.95497C8.98325 8.94672 9.08222 8.91015 9.16602 8.84928C9.24983 8.78841 9.31522 8.70561 9.355 8.60997L11.48 3.49897Z" stroke="#424242" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -216,42 +231,42 @@
                                 </svg>
 
 
+                            </div>
                         </div>
-                    </div>
 
-                </a>
+                    </a>
 
-                <!-- 4Th Card -->
-                <a href="./Card-details-page/4-CDP.html" class="card-container ">
-                    <div class="card-img">
-                        <img class="card-img-inside" src="./images/card-images/card-4.png" alt="">
-                    </div>
+                    <!-- 4Th Card -->
+                    <a href="./Card-details-page/4-CDP.html" class="card-container ">
+                        <div class="card-img">
+                            <img class="card-img-inside" src="./images/card-images/card-4.png" alt="">
+                        </div>
 
-                    <div class="btn-parent">
-                        <button class="card-btn">Young Adult</button>
-                        <button class="card-btn">Identity</button>
-                    </div>
-
-                    <div>
-                        <h2 class="card-sub-title">The scholarship monthly planner</h2>
-                        <p class="card-p">By: Mr. Shuvo</p>
-                    </div>
-                    <!-- ***---------card line---------------*** -->
-                    <div class="card-line"></div>
-
-
-                    <div class="card-fiction-rating">
+                        <div class="btn-parent">
+                            <button class="card-btn">Young Adult</button>
+                            <button class="card-btn">Identity</button>
+                        </div>
 
                         <div>
-                            <h3>Fiction</h3>
+                            <h2 class="card-sub-title">The scholarship monthly planner</h2>
+                            <p class="card-p">By: Mr. Shuvo</p>
                         </div>
-
-                        <div class="card-rating">
-                            <p>5:00</p>
-
+                        <!-- ***---------card line---------------*** -->
+                        <div class="card-line"></div>
 
 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <div class="card-fiction-rating">
+
+                            <div>
+                                <h3>Fiction</h3>
+                            </div>
+
+                            <div class="card-rating">
+                                <p>5:00</p>
+
+
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               
               
                                     <path d="M11.48 3.49897C11.5223 3.3958 11.5943 3.30755 11.6869 3.24543C11.7795 3.18331 11.8885 3.15015 12 3.15015C12.1115 3.15015 12.2205 3.18331 12.3131 3.24543C12.4057 3.30755 12.4777 3.3958 12.52 3.49897L14.645 8.60997C14.6848 8.70561 14.7502 8.78841 14.834 8.84928C14.9178 8.91015 15.0167 8.94672 15.12 8.95497L20.638 9.39697C21.137 9.43697 21.339 10.06 20.959 10.385L16.755 13.987C16.6765 14.0542 16.6179 14.1417 16.5858 14.2399C16.5537 14.3382 16.5493 14.4434 16.573 14.544L17.858 19.929C17.8838 20.037 17.8771 20.1503 17.8385 20.2545C17.8 20.3587 17.7315 20.4491 17.6416 20.5144C17.5517 20.5797 17.4445 20.6168 17.3335 20.6212C17.2225 20.6256 17.1127 20.597 17.018 20.539L12.293 17.654C12.2048 17.6001 12.1034 17.5715 12 17.5715C11.8966 17.5715 11.7952 17.6001 11.707 17.654L6.982 20.54C6.88725 20.598 6.77745 20.6266 6.66645 20.6222C6.55546 20.6178 6.44825 20.5807 6.35836 20.5154C6.26848 20.4501 6.19996 20.3597 6.16145 20.2555C6.12294 20.1513 6.11617 20.038 6.142 19.93L7.427 14.544C7.45083 14.4434 7.44645 14.3381 7.41434 14.2399C7.38223 14.1416 7.32363 14.0541 7.245 13.987L3.041 10.385C2.95634 10.3128 2.895 10.2171 2.86476 10.1101C2.83451 10.003 2.83671 9.88942 2.87109 9.78362C2.90546 9.67782 2.97046 9.58461 3.05785 9.51578C3.14524 9.44695 3.25109 9.4056 3.362 9.39697L8.88 8.95497C8.98325 8.94672 9.08222 8.91015 9.16602 8.84928C9.24983 8.78841 9.31522 8.70561 9.355 8.60997L11.48 3.49897Z" stroke="#424242" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -259,42 +274,42 @@
                                 </svg>
 
 
+                            </div>
                         </div>
-                    </div>
 
-                </a>
+                    </a>
 
-                <!-- 5Th Card -->
-                <a href="./Card-details-page/5-CDP.html" class="card-container">
-                    <div class="card-img">
-                        <img class="card-img-inside" src="./images/card-images/card-5.png" alt="">
-                    </div>
+                    <!-- 5Th Card -->
+                    <a href="./Card-details-page/5-CDP.html" class="card-container">
+                        <div class="card-img">
+                            <img class="card-img-inside" src="./images/card-images/card-5.png" alt="">
+                        </div>
 
-                    <div class="btn-parent">
-                        <button class="card-btn">Young Adult</button>
-                        <button class="card-btn">Identity</button>
-                    </div>
-
-                    <div>
-                        <h2 class="card-sub-title">Annotated texas family code</h2>
-                        <p class="card-p">By: Mr. Shuvo</p>
-                    </div>
-                    <!-- ***---------card line---------------*** -->
-                    <div class="card-line"></div>
-
-
-                    <div class="card-fiction-rating">
+                        <div class="btn-parent">
+                            <button class="card-btn">Young Adult</button>
+                            <button class="card-btn">Identity</button>
+                        </div>
 
                         <div>
-                            <h3>Fiction</h3>
+                            <h2 class="card-sub-title">Annotated texas family code</h2>
+                            <p class="card-p">By: Mr. Shuvo</p>
                         </div>
-
-                        <div class="card-rating">
-                            <p>5:00</p>
-
+                        <!-- ***---------card line---------------*** -->
+                        <div class="card-line"></div>
 
 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <div class="card-fiction-rating">
+
+                            <div>
+                                <h3>Fiction</h3>
+                            </div>
+
+                            <div class="card-rating">
+                                <p>5:00</p>
+
+
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               
               
                                     <path d="M11.48 3.49897C11.5223 3.3958 11.5943 3.30755 11.6869 3.24543C11.7795 3.18331 11.8885 3.15015 12 3.15015C12.1115 3.15015 12.2205 3.18331 12.3131 3.24543C12.4057 3.30755 12.4777 3.3958 12.52 3.49897L14.645 8.60997C14.6848 8.70561 14.7502 8.78841 14.834 8.84928C14.9178 8.91015 15.0167 8.94672 15.12 8.95497L20.638 9.39697C21.137 9.43697 21.339 10.06 20.959 10.385L16.755 13.987C16.6765 14.0542 16.6179 14.1417 16.5858 14.2399C16.5537 14.3382 16.5493 14.4434 16.573 14.544L17.858 19.929C17.8838 20.037 17.8771 20.1503 17.8385 20.2545C17.8 20.3587 17.7315 20.4491 17.6416 20.5144C17.5517 20.5797 17.4445 20.6168 17.3335 20.6212C17.2225 20.6256 17.1127 20.597 17.018 20.539L12.293 17.654C12.2048 17.6001 12.1034 17.5715 12 17.5715C11.8966 17.5715 11.7952 17.6001 11.707 17.654L6.982 20.54C6.88725 20.598 6.77745 20.6266 6.66645 20.6222C6.55546 20.6178 6.44825 20.5807 6.35836 20.5154C6.26848 20.4501 6.19996 20.3597 6.16145 20.2555C6.12294 20.1513 6.11617 20.038 6.142 19.93L7.427 14.544C7.45083 14.4434 7.44645 14.3381 7.41434 14.2399C7.38223 14.1416 7.32363 14.0541 7.245 13.987L3.041 10.385C2.95634 10.3128 2.895 10.2171 2.86476 10.1101C2.83451 10.003 2.83671 9.88942 2.87109 9.78362C2.90546 9.67782 2.97046 9.58461 3.05785 9.51578C3.14524 9.44695 3.25109 9.4056 3.362 9.39697L8.88 8.95497C8.98325 8.94672 9.08222 8.91015 9.16602 8.84928C9.24983 8.78841 9.31522 8.70561 9.355 8.60997L11.48 3.49897Z" stroke="#424242" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -302,42 +317,42 @@
                                 </svg>
 
 
+                            </div>
                         </div>
-                    </div>
 
-                </a>
+                    </a>
 
-                <!-- 6th Card -->
-                <a href="./Card-details-page/6-CDP.html" class="card-container ">
-                    <div class="card-img">
-                        <img class="card-img-inside" src="./images/card-images/card-6.png" alt="">
-                    </div>
+                    <!-- 6th Card -->
+                    <a href="./Card-details-page/6-CDP.html" class="card-container ">
+                        <div class="card-img">
+                            <img class="card-img-inside" src="./images/card-images/card-6.png" alt="">
+                        </div>
 
-                    <div class="btn-parent">
-                        <button class="card-btn">Young Adult</button>
-                        <button class="card-btn">Identity</button>
-                    </div>
-
-                    <div>
-                        <h2 class="card-sub-title">Loving iesus more</h2>
-                        <p class="card-p">By: Mr. Shuvo</p>
-                    </div>
-                    <!-- ***---------card line---------------*** -->
-                    <div class="card-line"></div>
-
-
-                    <div class="card-fiction-rating">
+                        <div class="btn-parent">
+                            <button class="card-btn">Young Adult</button>
+                            <button class="card-btn">Identity</button>
+                        </div>
 
                         <div>
-                            <h3>Fiction</h3>
+                            <h2 class="card-sub-title">Loving iesus more</h2>
+                            <p class="card-p">By: Mr. Shuvo</p>
                         </div>
-
-                        <div class="card-rating">
-                            <p>5:00</p>
-
+                        <!-- ***---------card line---------------*** -->
+                        <div class="card-line"></div>
 
 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <div class="card-fiction-rating">
+
+                            <div>
+                                <h3>Fiction</h3>
+                            </div>
+
+                            <div class="card-rating">
+                                <p>5:00</p>
+
+
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               
               
                                     <path d="M11.48 3.49897C11.5223 3.3958 11.5943 3.30755 11.6869 3.24543C11.7795 3.18331 11.8885 3.15015 12 3.15015C12.1115 3.15015 12.2205 3.18331 12.3131 3.24543C12.4057 3.30755 12.4777 3.3958 12.52 3.49897L14.645 8.60997C14.6848 8.70561 14.7502 8.78841 14.834 8.84928C14.9178 8.91015 15.0167 8.94672 15.12 8.95497L20.638 9.39697C21.137 9.43697 21.339 10.06 20.959 10.385L16.755 13.987C16.6765 14.0542 16.6179 14.1417 16.5858 14.2399C16.5537 14.3382 16.5493 14.4434 16.573 14.544L17.858 19.929C17.8838 20.037 17.8771 20.1503 17.8385 20.2545C17.8 20.3587 17.7315 20.4491 17.6416 20.5144C17.5517 20.5797 17.4445 20.6168 17.3335 20.6212C17.2225 20.6256 17.1127 20.597 17.018 20.539L12.293 17.654C12.2048 17.6001 12.1034 17.5715 12 17.5715C11.8966 17.5715 11.7952 17.6001 11.707 17.654L6.982 20.54C6.88725 20.598 6.77745 20.6266 6.66645 20.6222C6.55546 20.6178 6.44825 20.5807 6.35836 20.5154C6.26848 20.4501 6.19996 20.3597 6.16145 20.2555C6.12294 20.1513 6.11617 20.038 6.142 19.93L7.427 14.544C7.45083 14.4434 7.44645 14.3381 7.41434 14.2399C7.38223 14.1416 7.32363 14.0541 7.245 13.987L3.041 10.385C2.95634 10.3128 2.895 10.2171 2.86476 10.1101C2.83451 10.003 2.83671 9.88942 2.87109 9.78362C2.90546 9.67782 2.97046 9.58461 3.05785 9.51578C3.14524 9.44695 3.25109 9.4056 3.362 9.39697L8.88 8.95497C8.98325 8.94672 9.08222 8.91015 9.16602 8.84928C9.24983 8.78841 9.31522 8.70561 9.355 8.60997L11.48 3.49897Z" stroke="#424242" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -345,42 +360,42 @@
                                 </svg>
 
 
+                            </div>
                         </div>
-                    </div>
 
-                </a>
+                    </a>
 
-                <!-- 7th Card -->
-                <a href="./Card-details-page/7-CDP.html" class="card-container ">
-                    <div class="card-img">
-                        <img class="card-img-inside" src="./images/card-images/card-7.png" alt="">
-                    </div>
+                    <!-- 7th Card -->
+                    <a href="./Card-details-page/7-CDP.html" class="card-container ">
+                        <div class="card-img">
+                            <img class="card-img-inside" src="./images/card-images/card-7.png" alt="">
+                        </div>
 
-                    <div class="btn-parent">
-                        <button class="card-btn">Young Adult</button>
-                        <button class="card-btn">Identity</button>
-                    </div>
-
-                    <div>
-                        <h2 class="card-sub-title">The Catcher in the Rye</h2>
-                        <p class="card-p">By: Mr. Shuvo</p>
-                    </div>
-                    <!-- ***---------card line---------------*** -->
-                    <div class="card-line"></div>
-
-
-                    <div class="card-fiction-rating">
+                        <div class="btn-parent">
+                            <button class="card-btn">Young Adult</button>
+                            <button class="card-btn">Identity</button>
+                        </div>
 
                         <div>
-                            <h3>Fiction</h3>
+                            <h2 class="card-sub-title">The Catcher in the Rye</h2>
+                            <p class="card-p">By: Mr. Shuvo</p>
                         </div>
-
-                        <div class="card-rating">
-                            <p>5:00</p>
-
+                        <!-- ***---------card line---------------*** -->
+                        <div class="card-line"></div>
 
 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <div class="card-fiction-rating">
+
+                            <div>
+                                <h3>Fiction</h3>
+                            </div>
+
+                            <div class="card-rating">
+                                <p>5:00</p>
+
+
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               
               
                                     <path d="M11.48 3.49897C11.5223 3.3958 11.5943 3.30755 11.6869 3.24543C11.7795 3.18331 11.8885 3.15015 12 3.15015C12.1115 3.15015 12.2205 3.18331 12.3131 3.24543C12.4057 3.30755 12.4777 3.3958 12.52 3.49897L14.645 8.60997C14.6848 8.70561 14.7502 8.78841 14.834 8.84928C14.9178 8.91015 15.0167 8.94672 15.12 8.95497L20.638 9.39697C21.137 9.43697 21.339 10.06 20.959 10.385L16.755 13.987C16.6765 14.0542 16.6179 14.1417 16.5858 14.2399C16.5537 14.3382 16.5493 14.4434 16.573 14.544L17.858 19.929C17.8838 20.037 17.8771 20.1503 17.8385 20.2545C17.8 20.3587 17.7315 20.4491 17.6416 20.5144C17.5517 20.5797 17.4445 20.6168 17.3335 20.6212C17.2225 20.6256 17.1127 20.597 17.018 20.539L12.293 17.654C12.2048 17.6001 12.1034 17.5715 12 17.5715C11.8966 17.5715 11.7952 17.6001 11.707 17.654L6.982 20.54C6.88725 20.598 6.77745 20.6266 6.66645 20.6222C6.55546 20.6178 6.44825 20.5807 6.35836 20.5154C6.26848 20.4501 6.19996 20.3597 6.16145 20.2555C6.12294 20.1513 6.11617 20.038 6.142 19.93L7.427 14.544C7.45083 14.4434 7.44645 14.3381 7.41434 14.2399C7.38223 14.1416 7.32363 14.0541 7.245 13.987L3.041 10.385C2.95634 10.3128 2.895 10.2171 2.86476 10.1101C2.83451 10.003 2.83671 9.88942 2.87109 9.78362C2.90546 9.67782 2.97046 9.58461 3.05785 9.51578C3.14524 9.44695 3.25109 9.4056 3.362 9.39697L8.88 8.95497C8.98325 8.94672 9.08222 8.91015 9.16602 8.84928C9.24983 8.78841 9.31522 8.70561 9.355 8.60997L11.48 3.49897Z" stroke="#424242" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -388,41 +403,41 @@
                                 </svg>
 
 
+                            </div>
                         </div>
-                    </div>
 
-                </a>
-                <!-- 8th Card -->
-                <a href="./Card-details-page/8-CDP.html" class="card-container ">
-                    <div class="card-img">
-                        <img class="card-img-inside" src="./images/card-images/card-8.png" alt="">
-                    </div>
+                    </a>
+                    <!-- 8th Card -->
+                    <a href="./Card-details-page/8-CDP.html" class="card-container ">
+                        <div class="card-img">
+                            <img class="card-img-inside" src="./images/card-images/card-8.png" alt="">
+                        </div>
 
-                    <div class="btn-parent">
-                        <button class="card-btn">Young Adult</button>
-                        <button class="card-btn">Identity</button>
-                    </div>
-
-                    <div>
-                        <h2 class="card-sub-title">The Catcher in the Rye</h2>
-                        <p class="card-p">By: Mr. Shuvo</p>
-                    </div>
-                    <!-- ***---------card line---------------*** -->
-                    <div class="card-line"></div>
-
-
-                    <div class="card-fiction-rating">
+                        <div class="btn-parent">
+                            <button class="card-btn">Young Adult</button>
+                            <button class="card-btn">Identity</button>
+                        </div>
 
                         <div>
-                            <h3>Fiction</h3>
+                            <h2 class="card-sub-title">The Catcher in the Rye</h2>
+                            <p class="card-p">By: Mr. Shuvo</p>
                         </div>
-
-                        <div class="card-rating">
-                            <p>5:00</p>
-
+                        <!-- ***---------card line---------------*** -->
+                        <div class="card-line"></div>
 
 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <div class="card-fiction-rating">
+
+                            <div>
+                                <h3>Fiction</h3>
+                            </div>
+
+                            <div class="card-rating">
+                                <p>5:00</p>
+
+
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               
               
                                     <path d="M11.48 3.49897C11.5223 3.3958 11.5943 3.30755 11.6869 3.24543C11.7795 3.18331 11.8885 3.15015 12 3.15015C12.1115 3.15015 12.2205 3.18331 12.3131 3.24543C12.4057 3.30755 12.4777 3.3958 12.52 3.49897L14.645 8.60997C14.6848 8.70561 14.7502 8.78841 14.834 8.84928C14.9178 8.91015 15.0167 8.94672 15.12 8.95497L20.638 9.39697C21.137 9.43697 21.339 10.06 20.959 10.385L16.755 13.987C16.6765 14.0542 16.6179 14.1417 16.5858 14.2399C16.5537 14.3382 16.5493 14.4434 16.573 14.544L17.858 19.929C17.8838 20.037 17.8771 20.1503 17.8385 20.2545C17.8 20.3587 17.7315 20.4491 17.6416 20.5144C17.5517 20.5797 17.4445 20.6168 17.3335 20.6212C17.2225 20.6256 17.1127 20.597 17.018 20.539L12.293 17.654C12.2048 17.6001 12.1034 17.5715 12 17.5715C11.8966 17.5715 11.7952 17.6001 11.707 17.654L6.982 20.54C6.88725 20.598 6.77745 20.6266 6.66645 20.6222C6.55546 20.6178 6.44825 20.5807 6.35836 20.5154C6.26848 20.4501 6.19996 20.3597 6.16145 20.2555C6.12294 20.1513 6.11617 20.038 6.142 19.93L7.427 14.544C7.45083 14.4434 7.44645 14.3381 7.41434 14.2399C7.38223 14.1416 7.32363 14.0541 7.245 13.987L3.041 10.385C2.95634 10.3128 2.895 10.2171 2.86476 10.1101C2.83451 10.003 2.83671 9.88942 2.87109 9.78362C2.90546 9.67782 2.97046 9.58461 3.05785 9.51578C3.14524 9.44695 3.25109 9.4056 3.362 9.39697L8.88 8.95497C8.98325 8.94672 9.08222 8.91015 9.16602 8.84928C9.24983 8.78841 9.31522 8.70561 9.355 8.60997L11.48 3.49897Z" stroke="#424242" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -430,41 +445,41 @@
                                 </svg>
 
 
+                            </div>
                         </div>
-                    </div>
 
-                </a>
-                <!-- 9th Card -->
-                <a href="./Card-details-page/9-CDP.html" class="card-container ">
-                    <div class="card-img">
-                        <img class="card-img-inside" src="./images/card-images/card-9.png" alt="">
-                    </div>
+                    </a>
+                    <!-- 9th Card -->
+                    <a href="./Card-details-page/9-CDP.html" class="card-container ">
+                        <div class="card-img">
+                            <img class="card-img-inside" src="./images/card-images/card-9.png" alt="">
+                        </div>
 
-                    <div class="btn-parent">
-                        <button class="card-btn">Young Adult</button>
-                        <button class="card-btn">Identity</button>
-                    </div>
-
-                    <div>
-                        <h2 class="card-sub-title">The Catcher in the Rye</h2>
-                        <p class="card-p">By: Mr. Shuvo</p>
-                    </div>
-                    <!-- ***---------card line---------------*** -->
-                    <div class="card-line"></div>
-
-
-                    <div class="card-fiction-rating">
+                        <div class="btn-parent">
+                            <button class="card-btn">Young Adult</button>
+                            <button class="card-btn">Identity</button>
+                        </div>
 
                         <div>
-                            <h3>Fiction</h3>
+                            <h2 class="card-sub-title">The Catcher in the Rye</h2>
+                            <p class="card-p">By: Mr. Shuvo</p>
                         </div>
-
-                        <div class="card-rating">
-                            <p>5:00</p>
-
+                        <!-- ***---------card line---------------*** -->
+                        <div class="card-line"></div>
 
 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <div class="card-fiction-rating">
+
+                            <div>
+                                <h3>Fiction</h3>
+                            </div>
+
+                            <div class="card-rating">
+                                <p>5:00</p>
+
+
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               
               
                                     <path d="M11.48 3.49897C11.5223 3.3958 11.5943 3.30755 11.6869 3.24543C11.7795 3.18331 11.8885 3.15015 12 3.15015C12.1115 3.15015 12.2205 3.18331 12.3131 3.24543C12.4057 3.30755 12.4777 3.3958 12.52 3.49897L14.645 8.60997C14.6848 8.70561 14.7502 8.78841 14.834 8.84928C14.9178 8.91015 15.0167 8.94672 15.12 8.95497L20.638 9.39697C21.137 9.43697 21.339 10.06 20.959 10.385L16.755 13.987C16.6765 14.0542 16.6179 14.1417 16.5858 14.2399C16.5537 14.3382 16.5493 14.4434 16.573 14.544L17.858 19.929C17.8838 20.037 17.8771 20.1503 17.8385 20.2545C17.8 20.3587 17.7315 20.4491 17.6416 20.5144C17.5517 20.5797 17.4445 20.6168 17.3335 20.6212C17.2225 20.6256 17.1127 20.597 17.018 20.539L12.293 17.654C12.2048 17.6001 12.1034 17.5715 12 17.5715C11.8966 17.5715 11.7952 17.6001 11.707 17.654L6.982 20.54C6.88725 20.598 6.77745 20.6266 6.66645 20.6222C6.55546 20.6178 6.44825 20.5807 6.35836 20.5154C6.26848 20.4501 6.19996 20.3597 6.16145 20.2555C6.12294 20.1513 6.11617 20.038 6.142 19.93L7.427 14.544C7.45083 14.4434 7.44645 14.3381 7.41434 14.2399C7.38223 14.1416 7.32363 14.0541 7.245 13.987L3.041 10.385C2.95634 10.3128 2.895 10.2171 2.86476 10.1101C2.83451 10.003 2.83671 9.88942 2.87109 9.78362C2.90546 9.67782 2.97046 9.58461 3.05785 9.51578C3.14524 9.44695 3.25109 9.4056 3.362 9.39697L8.88 8.95497C8.98325 8.94672 9.08222 8.91015 9.16602 8.84928C9.24983 8.78841 9.31522 8.70561 9.355 8.60997L11.48 3.49897Z" stroke="#424242" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -472,15 +487,15 @@
                                 </svg>
 
 
+                            </div>
                         </div>
-                    </div>
 
-                </a>
+                    </a>
 
 
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 </body>
 
 </html>
